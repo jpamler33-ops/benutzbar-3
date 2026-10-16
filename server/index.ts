@@ -1,0 +1,14 @@
+import { MarketMonitor } from './markets.ts';
+import { resolve } from 'node:path';
+import { EnvHttpProxyAgent, setGlobalDispatcher } from 'undici';
+import { Store } from './db.ts';
+import { Scanner } from './scanner.ts';
+import { createApp } from './api.ts';
+if(process.env.HTTPS_PROXY||process.env.HTTP_PROXY)setGlobalDispatcher(new EnvHttpProxyAgent());
+const production=process.env.NODE_ENV==='production';const token=process.env.ADMIN_TOKEN;
+if(!token||token.length<24)throw new Error('ADMIN_TOKEN muss gesetzt sein (mindestens 24 Zeichen). Siehe .env.example.');
+if(process.env.RAILWAY_ENVIRONMENT_ID&&!process.env.RAILWAY_VOLUME_MOUNT_PATH)throw new Error('Railway benötigt ein persistentes Volume. Flüchtige Speicherung wird verweigert.');
+const path=process.env.DATABASE_PATH??resolve(process.env.RAILWAY_VOLUME_MOUNT_PATH??'data','opportunity.sqlite');
+if(process.env.RAILWAY_VOLUME_MOUNT_PATH&&!resolve(path).startsWith(resolve(process.env.RAILWAY_VOLUME_MOUNT_PATH)+'/'))throw new Error('DATABASE_PATH muss im Railway-Volume liegen.');
+const store=new Store(path);const scanner=new Scanner(store);const marketMonitor=new MarketMonitor(store);const app=createApp(store,scanner,token,resolve('dist'),marketMonitor);const server=app.listen(Number(process.env.PORT??3000),'0.0.0.0',()=>console.info(`Opportunity OS bereit auf Port ${process.env.PORT??3000} (${production?'production':'development'})`));const stop=process.env.SCANS_ENABLED==='false'?()=>{}:scanner.start();const stopMarkets=process.env.SCANS_ENABLED==='false'?()=>{}:marketMonitor.start();
+for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>{stop();stopMarkets();server.close(()=>{store.close();process.exit(0);});setTimeout(()=>process.exit(1),10000).unref();});

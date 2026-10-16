@@ -1,0 +1,456 @@
+{
+  "notices": [
+    {
+      "description-lot": {
+        "deu": [
+          "Hauptmassen: Rückbau Asphaltbeton, Dicke 12-14cm: ca. 88m2 Rückbau Fassaden-Metallverkleidung: ca. 5m2 Rückbau Fassadenholzausfachung, Kanthölzer ca. 8-10cm x 16-20cm: 205m2 Aushub Baugelände: ca. 447m3 Unterfangung nach DIN 4123, Unterfangungshöhe ca. 0,6m bis 2,0m: ca. 40m3 Beton der Bodenplatten: ca. 107m3 Beton der Fundamente und Frostschürzen: ca. 35m3 Beton der Stahlbetonwände: ca. 68m3 Beton der Stahlbetondecken: ca. 49m3 Betonstahl: ca. 50t Kalksandstein-Mauerwerk, Dicke 24cm: ca. 69m2 Kalksandstein-Mauerwerk, Dicke 36,5cm: ca. 259m2 Aufbeton Innenbereich, Dicke 12-19cm: ca. 20m2 sowie: Baustelleneinrichtung für eigene Arbeiten, Wasser- und Abwasseranlagen im Außenbereich, Grundleitungen innerhalb von Gebäuden."
+        ]
+      },
+      "notice-type": "can-standard",
+      "publication-number": "712928-2026",
+      "classification-cpv": [
+        "45111100",
+        "45112000",
+        "45223220",
+        "45262311",
+        "45262310",
+        "45262500",
+        "45332300",
+        "45111100",
+        "45112000",
+        "45223220",
+        "45262311",
+        "45262310",
+        "45262500",
+        "45332300"
+      ],
+      "buyer-name": {
+        "deu": [
+          "Bezirksklinikum Mittelfranken"
+        ]
+      },
+      "publication-date": "2026-10-15+02:00",
+      "place-of-performance-city-lot": [
+        "Erlangen"
+      ],
+      "place-of-performance-city-proc": [
+        "Erlangen, Kreisfreie Stadt"
+      ],
+      "links": {
+        "xml": {
+          "MUL": "https://ted.europa.eu/en/notice/712928-2026/xml"
+        },
+        "pdf": {
+          "BUL": "https://ted.europa.eu/bg/notice/712928-2026/pdf",
+          "SPA": "https://ted.europa.eu/es/notice/712928-2026/pdf",
+          "CES": "https://ted.europa.eu/cs/notice/712928-2026/pdf",
+          "DAN": "https://ted.europa.eu/da/notice/712928-2026/pdf",
+          "DEU": "https://ted.europa.eu/de/notice/712928-2026/pdf",
+          "EST": "https://ted.europa.eu/et/notice/712928-2026/pdf",
+          "ELL": "https://ted.europa.eu/el/notice/712928-2026/pdf",
+          "ENG": "https://ted.europa.eu/en/notice/712928-2026/pdf",
+          "FRA": "https://ted.europa.eu/fr/notice/712928-2026/pdf",
+          "GLE": "https://ted.europa.eu/ga/notice/712928-2026/pdf",
+          "HRV": "https://ted.europa.eu/hr/notice/712928-2026/pdf",
+          "ITA": "https://ted.europa.eu/it/notice/712928-2026/pdf",
+          "LAV": "https://ted.europa.eu/lv/notice/712928-2026/pdf",
+          "LIT": "https://ted.europa.eu/lt/notice/712928-2026/pdf",
+          "HUN": "https://ted.europa.eu/hu/notice/712928-2026/pdf",
+          "MLT": "https://ted.europa.eu/mt/notice/712928-2026/pdf",
+          "NLD": "https://ted.europa.eu/nl/notice/712928-2026/pdf",
+          "POL": "https://ted.europa.eu/pl/notice/712928-2026/pdf",
+          "POR": "https://ted.europa.eu/pt/notice/712928-2026/pdf",
+          "RON": "https://ted.europa.eu/ro/notice/712928-2026/pdf",
+          "SLK": "https://ted.europa.eu/sk/notice/712928-2026/pdf",
+          "SLV": "https://ted.europa.eu/sl/notice/712928-2026/pdf",
+          "FIN": "https://ted.europa.eu/fi/notice/712928-2026/pdf",
+          "SWE": "https://ted.europa.eu/sv/notice/712928-2026/pdf"
+        },
+        "pdfs": {
+          "DEU": "https://ted.europa.eu/de/notice/712928-2026/pdfs"
+        },
+        "html": {
+          "BUL": "https://ted.europa.eu/bg/notice/-/detail/712928-2026",
+          "SPA": "https://ted.europa.eu/es/notice/-/detail/712928-2026",
+          "CES": "https://ted.europa.eu/cs/notice/-/detail/712928-2026",
+          "DAN": "https://ted.europa.eu/da/notice/-/detail/712928-2026",
+          "DEU": "https://ted.europa.eu/de/notice/-/detail/712928-2026",
+          "EST": "https://ted.europa.eu/et/notice/-/detail/712928-2026",
+          "ELL": "https://ted.europa.eu/el/notice/-/detail/712928-2026",
+          "ENG": "https://ted.europa.eu/en/notice/-/detail/712928-2026",
+          "FRA": "https://ted.europa.eu/fr/notice/-/detail/712928-2026",
+          "GLE": "https://ted.europa.eu/ga/notice/-/detail/712928-2026",
+          "HRV": "https://ted.europa.eu/hr/notice/-/detail/712928-2026",
+          "ITA": "https://ted.europa.eu/it/notice/-/detail/712928-2026",
+          "LAV": "https://ted.europa.eu/lv/notice/-/detail/712928-2026",
+          "LIT": "https://ted.europa.eu/lt/notice/-/detail/712928-2026",
+          "HUN": "https://ted.europa.eu/hu/notice/-/detail/712928-2026",
+          "MLT": "https://ted.europa.eu/mt/notice/-/detail/712928-2026",
+          "NLD": "https://ted.europa.eu/nl/notice/-/detail/712928-2026",
+          "POL": "https://ted.europa.eu/pl/notice/-/detail/712928-2026",
+          "POR": "https://ted.europa.eu/pt/notice/-/detail/712928-2026",
+          "RON": "https://ted.europa.eu/ro/notice/-/detail/712928-2026",
+          "SLK": "https://ted.europa.eu/sk/notice/-/detail/712928-2026",
+          "SLV": "https://ted.europa.eu/sl/notice/-/detail/712928-2026",
+          "FIN": "https://ted.europa.eu/fi/notice/-/detail/712928-2026",
+          "SWE": "https://ted.europa.eu/sv/notice/-/detail/712928-2026"
+        },
+        "htmlDirect": {
+          "BUL": "https://ted.europa.eu/bg/notice/712928-2026/html",
+          "SPA": "https://ted.europa.eu/es/notice/712928-2026/html",
+          "CES": "https://ted.europa.eu/cs/notice/712928-2026/html",
+          "DAN": "https://ted.europa.eu/da/notice/712928-2026/html",
+          "DEU": "https://ted.europa.eu/de/notice/712928-2026/html",
+          "EST": "https://ted.europa.eu/et/notice/712928-2026/html",
+          "ELL": "https://ted.europa.eu/el/notice/712928-2026/html",
+          "ENG": "https://ted.europa.eu/en/notice/712928-2026/html",
+          "FRA": "https://ted.europa.eu/fr/notice/712928-2026/html",
+          "GLE": "https://ted.europa.eu/ga/notice/712928-2026/html",
+          "HRV": "https://ted.europa.eu/hr/notice/712928-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/712928-2026/html",
+          "LAV": "https://ted.europa.eu/lv/notice/712928-2026/html",
+          "LIT": "https://ted.europa.eu/lt/notice/712928-2026/html",
+          "HUN": "https://ted.europa.eu/hu/notice/712928-2026/html",
+          "MLT": "https://ted.europa.eu/mt/notice/712928-2026/html",
+          "NLD": "https://ted.europa.eu/nl/notice/712928-2026/html",
+          "POL": "https://ted.europa.eu/pl/notice/712928-2026/html",
+          "POR": "https://ted.europa.eu/pt/notice/712928-2026/html",
+          "RON": "https://ted.europa.eu/ro/notice/712928-2026/html",
+          "SLK": "https://ted.europa.eu/sk/notice/712928-2026/html",
+          "SLV": "https://ted.europa.eu/sl/notice/712928-2026/html",
+          "FIN": "https://ted.europa.eu/fi/notice/712928-2026/html",
+          "SWE": "https://ted.europa.eu/sv/notice/712928-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Németország – Bontási munka – Baumeister",
+        "lav": "Vācija – Demontāžas darbi – Baumeister",
+        "swe": "Tyskland – Rivning – Baumeister",
+        "gle": "An Ghearmáin – Demolition work – Baumeister",
+        "ell": "Γερμανία – Εργασίες κατεδάφισης – Baumeister",
+        "spa": "Alemania – Trabajos de demolición – Baumeister",
+        "est": "Saksamaa – Lammutustööd – Baumeister",
+        "nld": "Duitsland – Sloopwerkzaamheden – Baumeister",
+        "fin": "Saksa – Hajottamistyöt – Baumeister",
+        "pol": "Niemcy – Roboty w zakresie burzenia – Baumeister",
+        "hrv": "Njemačka – Radovi rušenja – Baumeister",
+        "ces": "Německo – Demoliční práce – Baumeister",
+        "dan": "Tyskland – Nedrivningsarbejde – Baumeister",
+        "ron": "Germania – Lucrări de demolare – Baumeister",
+        "por": "Alemanha – Demolição – Baumeister",
+        "slk": "Nemecko – Demolačné práce – Baumeister",
+        "fra": "Allemagne – Travaux de démolition – Baumeister",
+        "mlt": "Il-Ġermanja – Xogħol tad-demolizzjoni – Baumeister",
+        "deu": "Deutschland – Abbrucharbeiten – Baumeister",
+        "lit": "Vokietija – Griovimo darbai – Baumeister",
+        "ita": "Germania – Lavori di demolizione – Baumeister",
+        "bul": "Гepмaния – Разрушителни работи – Baumeister",
+        "slv": "Nemčija – Rušitvena dela – Baumeister",
+        "eng": "Germany – Demolition work – Baumeister"
+      },
+      "description-proc": {
+        "deu": "Hauptmassen: Rückbau Asphaltbeton, Dicke 12-14cm: ca. 88m2 Rückbau Fassaden-Metallverkleidung: ca. 5m2 Rückbau Fassadenholzausfachung, Kanthölzer ca. 8-10cm x 16-20cm: 205m2 Aushub Baugelände: ca. 447m3 Unterfangung nach DIN 4123, Unterfangungshöhe ca. 0,6m bis 2,0m: ca. 40m3 Beton der Bodenplatten: ca. 107m3 Beton der Fundamente und Frostschürzen: ca. 35m3 Beton der Stahlbetonwände: ca. 68m3 Beton der Stahlbetondecken: ca. 49m3 Betonstahl: ca. 50t Kalksandstein-Mauerwerk, Dicke 24cm: ca. 69m2 Kalksandstein-Mauerwerk, Dicke 36,5cm: ca. 259m2 Aufbeton Innenbereich, Dicke 12-19cm: ca. 20m2 sowie: Baustelleneinrichtung für eigene Arbeiten, Wasser- und Abwasseranlagen im Außenbereich, Grundleitungen innerhalb von Gebäuden."
+      }
+    },
+    {
+      "deadline-receipt-tender-date-lot": [
+        "2026-11-18+01:00"
+      ],
+      "description-lot": {
+        "deu": [
+          "Die KBS beabsichtigt, die Durchführung von behördeninternen Umzügen innerhalb von Nordrhein-Westfalen zu vergeben."
+        ]
+      },
+      "notice-type": "cn-standard",
+      "publication-number": "713510-2026",
+      "classification-cpv": [
+        "98392000",
+        "79613000",
+        "98392000",
+        "79613000"
+      ],
+      "selection-criterion-description-lot": {
+        "deu": [
+          "- die den Vergabeunterlagen beigefügte Eigenerklärung zum Nichtvorliegen von Ausschlussgründen (Anlage 2) - die den Vergabeunterlagen beigefügte Eigenerklärung zum EU-Sanktionspaket gegen Russland (Anlage 3) Zwecks Überprüfung der Einhaltung u.a. des § 1 Gesetz zur Regelung eines allgemeinen Mindestlohns (Mindestlohngesetz- MiLog) fordert die KBS für den Bewerber, der einen Zuschlag erhalten soll, beim Bundeskartellamt eine Auskunft aus dem Wettbewerbsregister an.",
+          "- die den Vergabeunterlagen beigefügte Referenzliste (Anlage 6) Der Bieter hat mindestens drei Referenzen vergleichbarer Aufträge (im Hinblick auf Art und Umfang) ab 2023 nachzuweisen.",
+          "- Der Auftragnehmer hat eine Schadenshaftpflichtversicherung wie folgt abgeschlossen: 3.000.000,00 € für Personen- und Sachschäden je Versicherungsfall (9.000.000,00 € für alle Versicherungsfälle eines Versicherungsjahres) 1.000.000,00 € für Vermögensschäden je Versicherungsfall (2.000.000,00 € für alle Versicherungsfälle eines Versicherungsjahres) 250.000,00 € für Schlüsselverlustschäden je Versicherungsfall (500.000,00 € für alle Versicherungsfälle eines Versicherungsjahres) (Nachweis durch Eigenerklärung nach Anlage 5)"
+        ]
+      },
+      "buyer-name": {
+        "deu": [
+          "Deutsche Rentenversicherung Knappschaft-Bahn-See"
+        ]
+      },
+      "publication-date": "2026-10-15+02:00",
+      "links": {
+        "xml": {
+          "MUL": "https://ted.europa.eu/en/notice/713510-2026/xml"
+        },
+        "pdf": {
+          "BUL": "https://ted.europa.eu/bg/notice/713510-2026/pdf",
+          "SPA": "https://ted.europa.eu/es/notice/713510-2026/pdf",
+          "CES": "https://ted.europa.eu/cs/notice/713510-2026/pdf",
+          "DAN": "https://ted.europa.eu/da/notice/713510-2026/pdf",
+          "DEU": "https://ted.europa.eu/de/notice/713510-2026/pdf",
+          "EST": "https://ted.europa.eu/et/notice/713510-2026/pdf",
+          "ELL": "https://ted.europa.eu/el/notice/713510-2026/pdf",
+          "ENG": "https://ted.europa.eu/en/notice/713510-2026/pdf",
+          "FRA": "https://ted.europa.eu/fr/notice/713510-2026/pdf",
+          "GLE": "https://ted.europa.eu/ga/notice/713510-2026/pdf",
+          "HRV": "https://ted.europa.eu/hr/notice/713510-2026/pdf",
+          "ITA": "https://ted.europa.eu/it/notice/713510-2026/pdf",
+          "LAV": "https://ted.europa.eu/lv/notice/713510-2026/pdf",
+          "LIT": "https://ted.europa.eu/lt/notice/713510-2026/pdf",
+          "HUN": "https://ted.europa.eu/hu/notice/713510-2026/pdf",
+          "MLT": "https://ted.europa.eu/mt/notice/713510-2026/pdf",
+          "NLD": "https://ted.europa.eu/nl/notice/713510-2026/pdf",
+          "POL": "https://ted.europa.eu/pl/notice/713510-2026/pdf",
+          "POR": "https://ted.europa.eu/pt/notice/713510-2026/pdf",
+          "RON": "https://ted.europa.eu/ro/notice/713510-2026/pdf",
+          "SLK": "https://ted.europa.eu/sk/notice/713510-2026/pdf",
+          "SLV": "https://ted.europa.eu/sl/notice/713510-2026/pdf",
+          "FIN": "https://ted.europa.eu/fi/notice/713510-2026/pdf",
+          "SWE": "https://ted.europa.eu/sv/notice/713510-2026/pdf"
+        },
+        "pdfs": {
+          "DEU": "https://ted.europa.eu/de/notice/713510-2026/pdfs"
+        },
+        "html": {
+          "BUL": "https://ted.europa.eu/bg/notice/-/detail/713510-2026",
+          "SPA": "https://ted.europa.eu/es/notice/-/detail/713510-2026",
+          "CES": "https://ted.europa.eu/cs/notice/-/detail/713510-2026",
+          "DAN": "https://ted.europa.eu/da/notice/-/detail/713510-2026",
+          "DEU": "https://ted.europa.eu/de/notice/-/detail/713510-2026",
+          "EST": "https://ted.europa.eu/et/notice/-/detail/713510-2026",
+          "ELL": "https://ted.europa.eu/el/notice/-/detail/713510-2026",
+          "ENG": "https://ted.europa.eu/en/notice/-/detail/713510-2026",
+          "FRA": "https://ted.europa.eu/fr/notice/-/detail/713510-2026",
+          "GLE": "https://ted.europa.eu/ga/notice/-/detail/713510-2026",
+          "HRV": "https://ted.europa.eu/hr/notice/-/detail/713510-2026",
+          "ITA": "https://ted.europa.eu/it/notice/-/detail/713510-2026",
+          "LAV": "https://ted.europa.eu/lv/notice/-/detail/713510-2026",
+          "LIT": "https://ted.europa.eu/lt/notice/-/detail/713510-2026",
+          "HUN": "https://ted.europa.eu/hu/notice/-/detail/713510-2026",
+          "MLT": "https://ted.europa.eu/mt/notice/-/detail/713510-2026",
+          "NLD": "https://ted.europa.eu/nl/notice/-/detail/713510-2026",
+          "POL": "https://ted.europa.eu/pl/notice/-/detail/713510-2026",
+          "POR": "https://ted.europa.eu/pt/notice/-/detail/713510-2026",
+          "RON": "https://ted.europa.eu/ro/notice/-/detail/713510-2026",
+          "SLK": "https://ted.europa.eu/sk/notice/-/detail/713510-2026",
+          "SLV": "https://ted.europa.eu/sl/notice/-/detail/713510-2026",
+          "FIN": "https://ted.europa.eu/fi/notice/-/detail/713510-2026",
+          "SWE": "https://ted.europa.eu/sv/notice/-/detail/713510-2026"
+        },
+        "htmlDirect": {
+          "BUL": "https://ted.europa.eu/bg/notice/713510-2026/html",
+          "SPA": "https://ted.europa.eu/es/notice/713510-2026/html",
+          "CES": "https://ted.europa.eu/cs/notice/713510-2026/html",
+          "DAN": "https://ted.europa.eu/da/notice/713510-2026/html",
+          "DEU": "https://ted.europa.eu/de/notice/713510-2026/html",
+          "EST": "https://ted.europa.eu/et/notice/713510-2026/html",
+          "ELL": "https://ted.europa.eu/el/notice/713510-2026/html",
+          "ENG": "https://ted.europa.eu/en/notice/713510-2026/html",
+          "FRA": "https://ted.europa.eu/fr/notice/713510-2026/html",
+          "GLE": "https://ted.europa.eu/ga/notice/713510-2026/html",
+          "HRV": "https://ted.europa.eu/hr/notice/713510-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/713510-2026/html",
+          "LAV": "https://ted.europa.eu/lv/notice/713510-2026/html",
+          "LIT": "https://ted.europa.eu/lt/notice/713510-2026/html",
+          "HUN": "https://ted.europa.eu/hu/notice/713510-2026/html",
+          "MLT": "https://ted.europa.eu/mt/notice/713510-2026/html",
+          "NLD": "https://ted.europa.eu/nl/notice/713510-2026/html",
+          "POL": "https://ted.europa.eu/pl/notice/713510-2026/html",
+          "POR": "https://ted.europa.eu/pt/notice/713510-2026/html",
+          "RON": "https://ted.europa.eu/ro/notice/713510-2026/html",
+          "SLK": "https://ted.europa.eu/sk/notice/713510-2026/html",
+          "SLV": "https://ted.europa.eu/sl/notice/713510-2026/html",
+          "FIN": "https://ted.europa.eu/fi/notice/713510-2026/html",
+          "SWE": "https://ted.europa.eu/sv/notice/713510-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Németország – Áthelyezési, költöztetési szolgáltatások – Umzugsleistungen für die KBS innerhalb von NRW",
+        "lav": "Vācija – Pārvietošanas pakalpojumi – Umzugsleistungen für die KBS innerhalb von NRW",
+        "swe": "Tyskland – Omlokalisering – Umzugsleistungen für die KBS innerhalb von NRW",
+        "gle": "An Ghearmáin – Relocation services – Umzugsleistungen für die KBS innerhalb von NRW",
+        "ell": "Γερμανία – Υπηρεσίες μετεγκατάστασης – Umzugsleistungen für die KBS innerhalb von NRW",
+        "spa": "Alemania – Servicios de traslado – Umzugsleistungen für die KBS innerhalb von NRW",
+        "est": "Saksamaa – Kolimisteenused – Umzugsleistungen für die KBS innerhalb von NRW",
+        "nld": "Duitsland – Verhuizingsdiensten – Umzugsleistungen für die KBS innerhalb von NRW",
+        "fin": "Saksa – Siirto- ja muuttopalvelut – Umzugsleistungen für die KBS innerhalb von NRW",
+        "pol": "Niemcy – Usługi relokacji – Umzugsleistungen für die KBS innerhalb von NRW",
+        "hrv": "Njemačka – Usluge preseljenja – Umzugsleistungen für die KBS innerhalb von NRW",
+        "ces": "Německo – Stěhovací služby – Umzugsleistungen für die KBS innerhalb von NRW",
+        "dan": "Tyskland – Tjenesteydelser i forbindelse med forflytning – Umzugsleistungen für die KBS innerhalb von NRW",
+        "ron": "Germania – Servicii de transfer – Umzugsleistungen für die KBS innerhalb von NRW",
+        "por": "Alemanha – Serviços de relocalização – Umzugsleistungen für die KBS innerhalb von NRW",
+        "slk": "Nemecko – Evakuačné služby – Umzugsleistungen für die KBS innerhalb von NRW",
+        "fra": "Allemagne – Services de déplacement – Umzugsleistungen für die KBS innerhalb von NRW",
+        "mlt": "Il-Ġermanja – Servizzi ta' rilokazzjoni – Umzugsleistungen für die KBS innerhalb von NRW",
+        "deu": "Deutschland – Umzugsdienste – Umzugsleistungen für die KBS innerhalb von NRW",
+        "lit": "Vokietija – Perkėlimo paslaugos – Umzugsleistungen für die KBS innerhalb von NRW",
+        "ita": "Germania – Servizi di trasloco – Umzugsleistungen für die KBS innerhalb von NRW",
+        "bul": "Гepмaния – Услуги по преместване – Umzugsleistungen für die KBS innerhalb von NRW",
+        "slv": "Nemčija – Selitvene storitve – Umzugsleistungen für die KBS innerhalb von NRW",
+        "eng": "Germany – Relocation services – Umzugsleistungen für die KBS innerhalb von NRW"
+      },
+      "sme-lot": [
+        false
+      ],
+      "description-proc": {
+        "deu": "Die KBS beabsichtigt, die Durchführung von behördeninternen Umzügen innerhalb von Nordrhein-Westfalen zu vergeben."
+      }
+    },
+    {
+      "notice-type": "can-standard",
+      "publication-number": "714871-2026",
+      "place-of-performance-city-lot": [
+        "Groß Weeden"
+      ],
+      "place-of-performance-city-proc": [
+        "Groß Weeden"
+      ],
+      "estimated-value-cur-proc": "EUR",
+      "description-lot": {
+        "deu": [
+          "Die zu erbringenden Leistungen umfassen Aufgaben aus dem operativen, organisatorischen, verwaltungstechnischen, kaufmännischen sowie umweltrelevanten Bereich, die im Rahmen der Nachsorge gemäß Kreislaufwirtschaftsgesetz (KrWG), Deponieverordnung (DepV) und weiteren einschlägigen Vorschriften erforderlich sind. Davon umfasst ist nicht die Geschäftsführung und die Geschäftsstelle. Nähere Angaben sind der Leistungsbeschreibung zu entnehmen."
+        ]
+      },
+      "classification-cpv": [
+        "90530000",
+        "90531000",
+        "90500000",
+        "90710000",
+        "90530000",
+        "90531000",
+        "90500000",
+        "90710000"
+      ],
+      "buyer-name": {
+        "deu": [
+          "Gesellschaft zur Beseitigung von Sonderabfällen mbH"
+        ]
+      },
+      "publication-date": "2026-10-15+02:00",
+      "estimated-value-proc": "831505.36",
+      "links": {
+        "xml": {
+          "MUL": "https://ted.europa.eu/en/notice/714871-2026/xml"
+        },
+        "pdf": {
+          "BUL": "https://ted.europa.eu/bg/notice/714871-2026/pdf",
+          "SPA": "https://ted.europa.eu/es/notice/714871-2026/pdf",
+          "CES": "https://ted.europa.eu/cs/notice/714871-2026/pdf",
+          "DAN": "https://ted.europa.eu/da/notice/714871-2026/pdf",
+          "DEU": "https://ted.europa.eu/de/notice/714871-2026/pdf",
+          "EST": "https://ted.europa.eu/et/notice/714871-2026/pdf",
+          "ELL": "https://ted.europa.eu/el/notice/714871-2026/pdf",
+          "ENG": "https://ted.europa.eu/en/notice/714871-2026/pdf",
+          "FRA": "https://ted.europa.eu/fr/notice/714871-2026/pdf",
+          "GLE": "https://ted.europa.eu/ga/notice/714871-2026/pdf",
+          "HRV": "https://ted.europa.eu/hr/notice/714871-2026/pdf",
+          "ITA": "https://ted.europa.eu/it/notice/714871-2026/pdf",
+          "LAV": "https://ted.europa.eu/lv/notice/714871-2026/pdf",
+          "LIT": "https://ted.europa.eu/lt/notice/714871-2026/pdf",
+          "HUN": "https://ted.europa.eu/hu/notice/714871-2026/pdf",
+          "MLT": "https://ted.europa.eu/mt/notice/714871-2026/pdf",
+          "NLD": "https://ted.europa.eu/nl/notice/714871-2026/pdf",
+          "POL": "https://ted.europa.eu/pl/notice/714871-2026/pdf",
+          "POR": "https://ted.europa.eu/pt/notice/714871-2026/pdf",
+          "RON": "https://ted.europa.eu/ro/notice/714871-2026/pdf",
+          "SLK": "https://ted.europa.eu/sk/notice/714871-2026/pdf",
+          "SLV": "https://ted.europa.eu/sl/notice/714871-2026/pdf",
+          "FIN": "https://ted.europa.eu/fi/notice/714871-2026/pdf",
+          "SWE": "https://ted.europa.eu/sv/notice/714871-2026/pdf"
+        },
+        "pdfs": {
+          "DEU": "https://ted.europa.eu/de/notice/714871-2026/pdfs"
+        },
+        "html": {
+          "BUL": "https://ted.europa.eu/bg/notice/-/detail/714871-2026",
+          "SPA": "https://ted.europa.eu/es/notice/-/detail/714871-2026",
+          "CES": "https://ted.europa.eu/cs/notice/-/detail/714871-2026",
+          "DAN": "https://ted.europa.eu/da/notice/-/detail/714871-2026",
+          "DEU": "https://ted.europa.eu/de/notice/-/detail/714871-2026",
+          "EST": "https://ted.europa.eu/et/notice/-/detail/714871-2026",
+          "ELL": "https://ted.europa.eu/el/notice/-/detail/714871-2026",
+          "ENG": "https://ted.europa.eu/en/notice/-/detail/714871-2026",
+          "FRA": "https://ted.europa.eu/fr/notice/-/detail/714871-2026",
+          "GLE": "https://ted.europa.eu/ga/notice/-/detail/714871-2026",
+          "HRV": "https://ted.europa.eu/hr/notice/-/detail/714871-2026",
+          "ITA": "https://ted.europa.eu/it/notice/-/detail/714871-2026",
+          "LAV": "https://ted.europa.eu/lv/notice/-/detail/714871-2026",
+          "LIT": "https://ted.europa.eu/lt/notice/-/detail/714871-2026",
+          "HUN": "https://ted.europa.eu/hu/notice/-/detail/714871-2026",
+          "MLT": "https://ted.europa.eu/mt/notice/-/detail/714871-2026",
+          "NLD": "https://ted.europa.eu/nl/notice/-/detail/714871-2026",
+          "POL": "https://ted.europa.eu/pl/notice/-/detail/714871-2026",
+          "POR": "https://ted.europa.eu/pt/notice/-/detail/714871-2026",
+          "RON": "https://ted.europa.eu/ro/notice/-/detail/714871-2026",
+          "SLK": "https://ted.europa.eu/sk/notice/-/detail/714871-2026",
+          "SLV": "https://ted.europa.eu/sl/notice/-/detail/714871-2026",
+          "FIN": "https://ted.europa.eu/fi/notice/-/detail/714871-2026",
+          "SWE": "https://ted.europa.eu/sv/notice/-/detail/714871-2026"
+        },
+        "htmlDirect": {
+          "BUL": "https://ted.europa.eu/bg/notice/714871-2026/html",
+          "SPA": "https://ted.europa.eu/es/notice/714871-2026/html",
+          "CES": "https://ted.europa.eu/cs/notice/714871-2026/html",
+          "DAN": "https://ted.europa.eu/da/notice/714871-2026/html",
+          "DEU": "https://ted.europa.eu/de/notice/714871-2026/html",
+          "EST": "https://ted.europa.eu/et/notice/714871-2026/html",
+          "ELL": "https://ted.europa.eu/el/notice/714871-2026/html",
+          "ENG": "https://ted.europa.eu/en/notice/714871-2026/html",
+          "FRA": "https://ted.europa.eu/fr/notice/714871-2026/html",
+          "GLE": "https://ted.europa.eu/ga/notice/714871-2026/html",
+          "HRV": "https://ted.europa.eu/hr/notice/714871-2026/html",
+          "ITA": "https://ted.europa.eu/it/notice/714871-2026/html",
+          "LAV": "https://ted.europa.eu/lv/notice/714871-2026/html",
+          "LIT": "https://ted.europa.eu/lt/notice/714871-2026/html",
+          "HUN": "https://ted.europa.eu/hu/notice/714871-2026/html",
+          "MLT": "https://ted.europa.eu/mt/notice/714871-2026/html",
+          "NLD": "https://ted.europa.eu/nl/notice/714871-2026/html",
+          "POL": "https://ted.europa.eu/pl/notice/714871-2026/html",
+          "POR": "https://ted.europa.eu/pt/notice/714871-2026/html",
+          "RON": "https://ted.europa.eu/ro/notice/714871-2026/html",
+          "SLK": "https://ted.europa.eu/sk/notice/714871-2026/html",
+          "SLV": "https://ted.europa.eu/sl/notice/714871-2026/html",
+          "FIN": "https://ted.europa.eu/fi/notice/714871-2026/html",
+          "SWE": "https://ted.europa.eu/sv/notice/714871-2026/html"
+        }
+      },
+      "notice-title": {
+        "hun": "Németország – Szeméttelep üzemeltetése – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "lav": "Vācija – Atkritumu poligona ekspluatācija – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "swe": "Tyskland – Drift av avfallsupplag – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "gle": "An Ghearmáin – Operation of a refuse site – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "ell": "Γερμανία – Λειτουργία χώρου απόθεσης απορριμμάτων – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "spa": "Alemania – Explotación de una instalación de vertido de desechos – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "est": "Saksamaa – Prügila ekspluatatsioon – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "nld": "Duitsland – Exploitatie van een stortplaats – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "fin": "Saksa – Kaatopaikkatoiminnan hoito – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "pol": "Niemcy – Eksploatacja składowisk odpadów – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "hrv": "Njemačka – Upravljanje i vođenje odlagališta – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "ces": "Německo – Provoz skládky – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "dan": "Tyskland – Drift af losseplads – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "ron": "Germania – Exploatarea rampelor de gunoi – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "por": "Alemanha – Exploração de um depósito de resíduos – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "slk": "Nemecko – Prevádzka skládok – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "fra": "Allemagne – Exploitation d'une décharge – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "mlt": "Il-Ġermanja – L-operat tas-sit taż-żibel – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "deu": "Deutschland – Betrieb einer Mülldeponie – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "lit": "Vokietija – Atliekų aikštelių eksploatavimas – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "ita": "Germania – Gestione di una discarica di rifiuti – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "bul": "Гepмaния – Експлоатация на депа за отпадъци – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "slv": "Nemčija – Obratovanje deponij odpadkov – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen",
+        "eng": "Germany – Operation of a refuse site – Ex-Post: Gesellschaft zur Beseitigung von Sonderabfällen mbH: Vergabe von Dienstleistungen auf der Sonderabfalldeponie Rondeshagen"
+      },
+      "description-proc": {
+        "deu": "Der Auftraggeber schreibt Dienstleistungen im Rahmen der kontinuierlichen und umfassenden Wahrnehmung der Nachsorgepflichten einer Sonderabfalldeponie im Zuständigkeitsbereich des Auftraggebers aus."
+      }
+    }
+  ],
+  "totalNoticeCount": 1018,
+  "iterationNextToken": null,
+  "timedOut": false
+}

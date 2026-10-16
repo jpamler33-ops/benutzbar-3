@@ -1,0 +1,9 @@
+import { z } from 'zod';
+export const statuses=['NEU','PRÜFEN','INTERESSANT','KONTAKTIERT','GEWONNEN','VERLOREN'] as const;
+export const settingsSchema=z.object({radius:z.number().min(1).max(500),lookbackDays:z.number().int().min(1).max(180),keywords:z.array(z.string().trim().min(2).max(60).regex(/^[\p{L}\p{N} äöüÄÖÜß-]+$/u)).min(1).max(30),weights:z.object({industry:z.number().min(0).max(100),region:z.number().min(0).max(100),deadline:z.number().min(0).max(100),access:z.number().min(0).max(100),quality:z.number().min(0).max(100)})}).strict().refine(s=>Object.values(s.weights).reduce((a,b)=>a+b,0)===100,'Gewichtungen müssen zusammen 100 ergeben');
+export type Settings=z.infer<typeof settingsSchema>;
+export const defaults:Settings={radius:60,lookbackDays:90,keywords:['Entrümpelung','Haushaltsauflösung','Wohnungsräumung','Sperrmüll','Entsorgung','Gebäuderäumung','Demontage','Rückbau','Containerdienste','Umzüge','Räumungsarbeiten'],weights:{industry:40,region:25,deadline:15,access:10,quality:10}};
+export interface Notice {dataKind:'LIVE-DATEN'|'TESTDATEN';sourceId:string;source:string;title:string;buyer:string|null;description:string;requirements:string|null;locations:string[];published:string|null;deadlines:string[];value:number|null;currency:string|null;cpv:string[];noticeType:string|null;sme:boolean|null;url:string;raw:unknown}
+export interface Component {key:keyof Settings['weights'];label:string;value:number|null;reason:string;weight:number}
+export interface Assessment {score:number;components:Component[];unknown:string[];category:string;distance:number|null;regionMatch:boolean;active:boolean|null}
+export interface Opportunity extends Notice {id:number;status:typeof statuses[number];saved:boolean;createdAt:string;updatedAt:string;assessment:Assessment}

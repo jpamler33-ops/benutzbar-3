@@ -1,0 +1,504 @@
+{
+  "uri": "https://oeffentlichevergabe.de/api/notices/5e5847df-b8dd-40db-9e6e-7e611709bd7c?format=ocds&noticeVersion=01",
+  "version": "1.1",
+  "extensions": [
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/bd6a5a0617abcdcf9da19db0e70a899e6b10c91c/extension.json",
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_location_extension/v1.1.5/extension.json",
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_enquiry_extension/v1.1.5/extension.json",
+    "https://raw.githubusercontent.com/open-contracting-extensions/ocds_coveredBy_extension/9b617f9c3a84f8eb727f273e1bb55a1c5bc7a925/extension.json"
+  ],
+  "publishedDate": "2026-10-15T02:06:06Z",
+  "releases": [
+    {
+      "ocid": "ocds-mnwr74-391ea26b-418f-45bc-be7e-d7d98ae40273",
+      "id": "5e5847df-b8dd-40db-9e6e-7e611709bd7c",
+      "date": "2026-10-15T02:06:06Z",
+      "tag": [
+        "tender"
+      ],
+      "initiationType": "tender",
+      "parties": [
+        {
+          "name": "DB Station&Service AG (Bukr 11)",
+          "id": "ORG-0001",
+          "identifier": {
+            "id": "1691faa3-330c-4d76-a952-fba98f1e87c3",
+            "legalName": "DB Station&Service AG (Bukr 11)"
+          },
+          "address": {
+            "streetAddress": "Europaplatz 1",
+            "locality": "Berlin",
+            "region": "DE300",
+            "postalCode": "10557",
+            "countryName": "DEU"
+          },
+          "contactPoint": {
+            "name": "FE.EI 76",
+            "email": "kai.brinkmann@deutschebahn.com",
+            "telephone": "+49 20330174721",
+            "faxNumber": "+49 69260913869",
+            "url": "http://www.deutschebahn.com/bieterportal"
+          },
+          "roles": [
+            "buyer",
+            "processContactPoint"
+          ]
+        },
+        {
+          "name": "Vergabekammer des Bundes",
+          "id": "ORG-0002",
+          "identifier": {
+            "id": "0a9ea480-08e4-4ab6-bf12-d722d0ad54b6",
+            "legalName": "Vergabekammer des Bundes"
+          },
+          "address": {
+            "streetAddress": "Kaiser-Friedrich-Straße 16",
+            "locality": "Bonn",
+            "region": "DEA22",
+            "postalCode": "53113",
+            "countryName": "DEU"
+          },
+          "contactPoint": {
+            "email": "vk@bundeskartellamt.bund.de",
+            "telephone": "+49 22894990"
+          },
+          "roles": [
+            "reviewContactPoint",
+            "reviewBody"
+          ]
+        }
+      ],
+      "buyer": {
+        "name": "DB Station&Service AG (Bukr 11)",
+        "id": "1691faa3-330c-4d76-a952-fba98f1e87c3",
+        "identifier": {
+          "id": "ORG-0001",
+          "legalName": "DB Station&Service AG (Bukr 11)"
+        },
+        "address": {
+          "streetAddress": "Europaplatz 1",
+          "locality": "Berlin",
+          "region": "DE300",
+          "postalCode": "10557",
+          "countryName": "DEU"
+        },
+        "contactPoint": {
+          "name": "FE.EI 76",
+          "email": "kai.brinkmann@deutschebahn.com",
+          "telephone": "+49 20330174721",
+          "faxNumber": "+49 69260913869",
+          "url": "http://www.deutschebahn.com/bieterportal"
+        }
+      },
+      "tender": {
+        "id": "391ea26b-418f-45bc-be7e-d7d98ae40273",
+        "title": "Sanierung Von Bahnsteigdächer und Errichtung von Befahranlagen am Bf. Regensburg",
+        "description": "Die Arbeiten im Hbf Regensburg umfassen in LOS1 die Sanierung von zwei Mittelbahnsteigdächern und in LOS 2, die Errichtung von Befahranlagen an den Querhäusern (QH) und der Personenüberführung (PÜ). Der Dach-Sanierungsumfang besteht aus der Erneuerung der Dachabdichtung, des Korrosionsschutzes, der Dachbeleuchtung, der Unterdecken und die Instandsetzung von Dachstützenfüßen. \nLos 1 Maßnahme Dachsanierung:\nKenndaten der auszuführenden Dachsanierung:\nAbmessungen je Bahnsteigdach l=ca. 160m x b=10,25m\nAbbruchmaterialen  je Bahnsteigdach ca. 3875m²\nAbdichtungsanschlüsse, Attikaherstellung, Profile, Auflagebleche u. -winkel, Sekurantensystem, Dachlattung, Reinigungsschienen je Bahnsteig ca. 2850m\nSparren, Abläufe, Fugenherstellung, Durchdringungen, Revisionsklappen, Regenabläufe, Fallrohre, Notüberläufe ca. 316St \nKenndaten der Korrosionsschutzerneuerung an den Stahltragstrukturen  je Dach:\nPflaster u. Schotterarbeiten ca. 200m²\nBaugruben, Abbruch v. Fundamenten, Verfüllungen ca. 55m³\nAnpassung Pflasterdecken, Schutzkanten, Taubenabwehr ca. 275m\nHilfsabstützungen, Verguss, Schweißarbeiten, Blecharbeiten, Stahlbetonsockel ca. 190St. \nStahlbewehrung 6t\nErneuerung Korrosionsschutz, Sandstrahlen (Vakuumverfahren), mehrmalige Beschichtung ca. 600m²\nKenndaten  Beleuchtungserneuerung je Dach:\nProv. Beleuchtung, Einzel- u. Doppelausleger, Mastaufsatzleuchten, LED-Leuchten, Steckverb. Ca. 205St.\nMedienkanal ca. 640m\nKabelarbeiten, Rohr- und Zugseilinstallation, ca. 1925m \nLos 2 Maßnahme Befahranlagen:\nKenndaten Außen Fassaden-Befahranlagen (Gesamtfahrlänge aller Außen-Befahranlagen ca. 350m) \n2 handbetriebene Kastenleitern teleskopierbar mit Schienen- und Anschlüssen an den Fassaden des  Querhauses 1\n Höhe der Kastenleiter ca. 6,5m, Gewicht ca.500kg\n4  handbetriebene Kastenleitern mit Schienen- und Anschlüssen an den Fassaden der Querhäusern 2+3\n Höhe der Kastenleiter ca. 8,5m, Gewicht ca. 500kg\n6  handbetriebene Kastenleitern mit Schienen- und Anschlüssen an den Fassaden der Personenüberführung \n Höhe der Kastenleiter ca. 5,5m, Gewicht ca. 400kg\nKenndaten Innen Fassaden-Befahranlagen (Gesamtfahrlänge aller Innen-Befahranlagen ca. 160m) \n4 Monorailanlagen mit Motorgondel \nBefestigungshöhe ca. 11m\nMontagearbeiten  \nHängegerüste an der Personenüberführung ca. 900m²\nFreistehende Arbeitsgerüste für die Außen- und Innenbefahranlagen an den Querhäusern ca. 5000m² \nEinsatz von Mobilschwelastkran ca. 400t, Hublänge ca. 80m, Traglast bei max. Auslegung ca. 2t\nDurchgehende Nachtschichtarbeiten\nSekurantensystem und Überstiege  \nSekurant, Stahlseil ca. 256m\nSekuranten, Anschlagpunkte (variierend) ca. 120St.\nÜberstiege (Metalltreppen) ca. h=1.20m u. b=1.00m, ca. 5St.",
+        "procuringEntity": {
+          "name": "DB Station&Service AG (Bukr 11)",
+          "id": "1691faa3-330c-4d76-a952-fba98f1e87c3"
+        },
+        "items": [
+          {
+            "id": "LOT-0001",
+            "classification": {
+              "scheme": "CPV",
+              "id": "45000000",
+              "description": "Construction work"
+            },
+            "additionalClassifications": [
+              {
+                "scheme": "CPV",
+                "id": "44112400",
+                "description": "Roof"
+              },
+              {
+                "scheme": "CPV",
+                "id": "44233000",
+                "description": "Staircases"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45112700",
+                "description": "Landscaping work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45200000",
+                "description": "Works for complete or part construction and civil engineering work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45210000",
+                "description": "Building construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45213220",
+                "description": "Construction work for warehouses"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45213321",
+                "description": "Railway station construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45220000",
+                "description": "Engineering works and construction works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221112",
+                "description": "Railway bridge construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221115",
+                "description": "Construction work for steel bridges"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221200",
+                "description": "Construction work for tunnels, shafts and subways"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221243",
+                "description": "Pedestrian tunnel construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221250",
+                "description": "Underground work other than tunnels, shafts and subways"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223000",
+                "description": "Structures construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223200",
+                "description": "Structural works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223210",
+                "description": "Structural steelworks"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223220",
+                "description": "Structural shell work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45234100",
+                "description": "Railway construction works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45234115",
+                "description": "Railway signalling works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45234116",
+                "description": "Track construction works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45259900",
+                "description": "Plant upgrade work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45261210",
+                "description": "Roof-covering work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45261213",
+                "description": "Metal roof-covering work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262310",
+                "description": "Reinforced-concrete work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262400",
+                "description": "Structural steel erection work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262670",
+                "description": "Metalworking"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262800",
+                "description": "Building extension work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45314310",
+                "description": "Installation of cable laying"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45332400",
+                "description": "Sanitary fixture installation work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45453100",
+                "description": "Refurbishment work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45454000",
+                "description": "Restructuring work"
+              }
+            ],
+            "deliveryAddress": {
+              "streetAddress": "Hauptbahnhof Regensburg",
+              "locality": "Regensburg",
+              "region": "DE232",
+              "postalCode": "93047",
+              "countryName": "DEU"
+            },
+            "relatedLot": "LOT-0001"
+          },
+          {
+            "id": "LOT-0002",
+            "classification": {
+              "scheme": "CPV",
+              "id": "45000000",
+              "description": "Construction work"
+            },
+            "additionalClassifications": [
+              {
+                "scheme": "CPV",
+                "id": "44112400",
+                "description": "Roof"
+              },
+              {
+                "scheme": "CPV",
+                "id": "44233000",
+                "description": "Staircases"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45112700",
+                "description": "Landscaping work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45200000",
+                "description": "Works for complete or part construction and civil engineering work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45210000",
+                "description": "Building construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45213220",
+                "description": "Construction work for warehouses"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45213321",
+                "description": "Railway station construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45220000",
+                "description": "Engineering works and construction works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221112",
+                "description": "Railway bridge construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221115",
+                "description": "Construction work for steel bridges"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221200",
+                "description": "Construction work for tunnels, shafts and subways"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221243",
+                "description": "Pedestrian tunnel construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45221250",
+                "description": "Underground work other than tunnels, shafts and subways"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223000",
+                "description": "Structures construction work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223200",
+                "description": "Structural works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223210",
+                "description": "Structural steelworks"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45223220",
+                "description": "Structural shell work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45234100",
+                "description": "Railway construction works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45234115",
+                "description": "Railway signalling works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45234116",
+                "description": "Track construction works"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45259900",
+                "description": "Plant upgrade work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45261210",
+                "description": "Roof-covering work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45261213",
+                "description": "Metal roof-covering work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262310",
+                "description": "Reinforced-concrete work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262400",
+                "description": "Structural steel erection work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262670",
+                "description": "Metalworking"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45262800",
+                "description": "Building extension work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45314310",
+                "description": "Installation of cable laying"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45332400",
+                "description": "Sanitary fixture installation work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45453100",
+                "description": "Refurbishment work"
+              },
+              {
+                "scheme": "CPV",
+                "id": "45454000",
+                "description": "Restructuring work"
+              }
+            ],
+            "deliveryAddress": {
+              "streetAddress": "Hauptbahnhof Regensburg",
+              "locality": "Regensburg",
+              "region": "DE232",
+              "postalCode": "93047",
+              "countryName": "DEU"
+            },
+            "relatedLot": "LOT-0002"
+          }
+        ],
+        "procurementMethod": "open",
+        "procurementMethodDetails": "Open",
+        "mainProcurementCategory": "works",
+        "numberOfTenderers": 0,
+        "documents": [
+          {
+            "id": "DOC-0001",
+            "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/eed20a4d-a6de-472b-9a99-8c075f1c993c",
+            "language": "DEU",
+            "relatedLots": [
+              "LOT-0001"
+            ]
+          },
+          {
+            "id": "DOC-0002",
+            "url": "https://bieterportal.noncd.db.de/evergabe.bieter/api/supplier/external/deeplink/subproject/eed20a4d-a6de-472b-9a99-8c075f1c993c",
+            "language": "DEU",
+            "relatedLots": [
+              "LOT-0002"
+            ]
+          }
+        ],
+        "lots": [
+          {
+            "id": "LOT-0001",
+            "title": "Sanierung von Bahnsteigdächern  am Bf. Regensburg",
+            "description": "Gegenstand der Ausschreibung sind Bauleistungen zur Instandsetzung und Modernisierung der Bahnsteigdächer an den Gleisen 4/5 sowie 8/9 im Hauptbahnhof Regensburg. Die Maßnahme umfasst Korrosionsschutz- und Stahlbauarbeiten, Dachabdichtungs- und Holzbauarbeiten, die Erneuerung der Dachentwässerung, die Anpassung der Beleuchtungsanlagen sowie umfangreiche Rückbau-, Schadstoffsanierungs- und Entsorgungsleistungen unter laufendem Eisenbahnbetrieb.  \nDie wesentlichen Leistungen umfassen die vollständige Erneuerung der Dachabdichtung auf einer Fläche von ca. 2.900 m² einschließlich ca. 875 m² Gefälledämmung, ca. 585 m² Kehlgefälleplatten, ca. 2.000 m² Bretterschalung sowie ca. 1.810 m² Aluminium-Unterdecken. Weiterhin sind umfangreiche Holzbauarbeiten mit dem Austausch von insgesamt 309 Sparren und 309 Keilhölzern sowie der Erneuerung von ca. 4.820 m Dachlattung auszuführen.  \nBestandteil des Auftrags sind umfangreiche Stahlbau- und Korrosionsschutzarbeiten an den Tragwerken der Bahnsteigdächer. Hierzu gehören die schadstoffgerechte Entfernung bestehender Beschichtungssysteme auf insgesamt ca. 1.160 m² Stahlflächen, die Erneuerung des Korrosionsschutzsystems an Stützen, Quer- und Längsträgern sowie die konstruktive Instandsetzung von Stützenfüßen mit 68 Stahlbetonsockeln, ca. 12 t Bewehrungsstahl und Verstärkungsmaßnahmen an den Stahlstützen.  \nDie Maßnahme umfasst ferner die Erneuerung und Anpassung der Dachentwässerung einschließlich 47 Regenwasserabläufen, 21 Notüberläufen, 32 Speiern, 51 Fallrohren, ca. 180 m gereinigten Entwässerungsleitungen sowie ca. 60 m Notentwässerungsrinnen. \nIm Bereich der technischen Ausrüstung sind die Erneuerung und temporäre Aufrechterhaltung der Bahnsteigbeleuchtung einschließlich ca. 1.950 m Energie- und Beleuchtungskabeln, ca. 940 m Medienkanälen, 210 LED-Leuchten, 17 provisorischen Beleuchtungsmasten sowie zugehörigen Verteilungen, Anschlüssen und Steuerungseinrichtungen auszuführen. \nWeiterhin umfasst die Maßnahme umfangreiche Rückbauarbeiten mit dem Ausbau und der Entsorgung bestehender Dachabdichtungen, Dämmstoffe, Unterdecken, Attikakonstruktionen und schadstoffbelasteter Baustoffe sowie die Durchführung der erforderlichen Entsorgungs- und Nachweisverfahren nach den geltenden umwelt- und abfallrechtlichen Vorschriften. \nDie Arbeiten erfolgen unter laufendem Bahnbetrieb und beinhalten die hierfür erforderlichen Sicherungs-, Logistik-, Verkehrsführungs-, Dokumentations- und Genehmigungsleistungen.\n",
+            "contractPeriod": {
+              "startDate": "2027-01-13T00:00:00+01:00",
+              "endDate": "2028-02-25T00:00:00+01:00"
+            }
+          },
+          {
+            "id": "LOT-0002",
+            "title": "Errichtung  von Befahranlagen",
+            "description": "Gegenstand der Ausschreibung sind die Lieferung, Herstellung, Montage, Inbetriebnahme und Dokumentation von dauerhaften Befahr-, Wartungs- und Absturzsicherungssystemen für die Bahnsteigdächer, Querhäuser und Personenüberführungen des Hauptbahnhofs Regensburg. Die Leistungen umfassen insbesondere Kastenleiteranlagen, Monorailanlagen, Seilsicherungssysteme, Zugangs- und Überstiegskonstruktionen, Hilfsabstützungen, Sonderstahlkonstruktionen sowie umfangreiche Gerüst-, Kran- und Montageleistungen unter laufendem Eisenbahnbetrieb. \nDie Maßnahme beinhaltet die Herstellung und Montage von insgesamt 12 Fassadenbefahranlagen in Form verfahrbarer Kastenleitern einschließlich zugehöriger Schienen-, Führungs-, Erdungs- und Tragkonstruktionen. Hierfür sind Schienen- und Führungssysteme mit einer Gesamtlänge von ca. 500 m einschließlich Schwertkonstruktionen, Befestigungs- und Erdungseinrichtungen herzustellen und zu montieren. \nWeiterhin umfasst der Auftrag die Herstellung von Monorailanlagen für Wartungs- und Reinigungsarbeiten an den Querhäusern mit insgesamt 8 Fahrwerken, ca. 144 m Monorailschienen sowie einer verfahrbaren Motorgondel einschließlich aller erforderlichen Trag- und Befestigungskonstruktionen. \nBestandteil des Auftrags sind darüber hinaus sechs überfahrbare Edelstahl-Seilsicherungssysteme mit insgesamt ca. 320 m Sicherungsseilen, einer Vielzahl von Anschlagpunkten, Zwischenhaltern, Eckumfahrungen und Endhaltern sowie die Herstellung von fünf fest installierten Überstiegsanlagen zwischen Querhäusern und Fußgängerstegen.  \nZur Ausführung der Arbeiten sind umfangreiche Gerüstbauleistungen erforderlich. Hierzu gehören Arbeits-, Schutz- und Hängegerüste mit einer Gesamtfläche von ca. 5.500 m², Gerüstbekleidungen von ca. 5.700 m², Gitterträgerkonstruktionen mit einer Gesamtlänge von ca. 465 m, mehrere Gerüstumbauten sowie Treppenaufgänge und Zugangsanlagen. Sämtliche Gerüstanlagen sind unter Berücksichtigung der betrieblichen Randbedingungen des Bahnhofs zu errichten, vorzuhalten und zurückzubauen.  \nFerner umfasst die Maßnahme umfangreiche Kranleistungen mit Mobilkranen bis 450 t Tragkraft und Mobilkranen bis 300 t Tragkraft einschließlich Mobilisierung, Nachtarbeitseinsätzen, Vorhaltung, Verkehrsführung und Lastverteilungseinrichtungen. \nWeiterhin sind Hilfs- und Sonderkonstruktionen zur Lastabtragung und Sicherstellung der Standsicherheit auszuführen. Dies umfasst unter anderem Verstärkungsstützen, temporäre Hilfsabstützungen für Bahnsteigdächer und Vordächer, Gerüstadapter zur Lastabtragung über die Personenüberführung sowie Durchsteifungselemente für die Einleitung von Gerüstlasten in bestehende Tragwerke. \nDie Leistungen beinhalten zudem sämtliche erforderlichen Planungs-, Prüf-, Dokumentations-, Vermessungs-, Genehmigungs-, Sicherheits-, Inbetriebnahme- und Einweisungsleistungen einschließlich der Erstellung statischer Nachweise und Bestandsdokumentationen. Die Arbeiten erfolgen unter laufendem Eisenbahn- und Reisendenbetrieb. \n",
+            "contractPeriod": {
+              "startDate": "2027-01-13T00:00:00+01:00",
+              "endDate": "2028-02-25T00:00:00+01:00"
+            }
+          }
+        ],
+        "lotDetails": {
+          "maximumLotsBidPerSupplier": 2,
+          "maximumLotsAwardedPerSupplier": 2
+        }
+      },
+      "language": "DEU"
+    }
+  ],
+  "publisher": {
+    "name": "Bekanntmachungsservice"
+  },
+  "license": "https://opendefinition.org/licenses/cc-zero/",
+  "publicationPolicy": "https://oeffentlichevergabe.de/ui/de/publicationPolicy"
+}
