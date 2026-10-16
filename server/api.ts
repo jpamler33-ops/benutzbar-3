@@ -119,6 +119,8 @@ export function createApp(
   marketMonitor = new MarketMonitor(store),
 ) {
   const app = express();
+  // Railway terminates public traffic at one edge-proxy hop. Do not trust arbitrary chains.
+  if (process.env.RAILWAY_ENVIRONMENT_ID) app.set("trust proxy", 1);
   app.disable("x-powered-by");
   app.use(
     helmet({

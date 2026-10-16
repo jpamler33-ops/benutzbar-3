@@ -11,7 +11,7 @@
 
 ## Lokale Prüfungen
 
-- 42 Unit-/Integrations-/API-Tests erfolgreich.
+- 43 Unit-/Integrations-/API-Tests erfolgreich.
 - Acht Browser-Tests erfolgreich (Desktop 1440 px, Smartphone 390 px): bestehende Arbeitsabläufe, Markterklärungen, Belege und Aktien-Watchlist; kein horizontaler Überlauf.
 - Produktionsbuild erfolgreich; Dependency-Audit ohne bekannte Schwachstellen.
 - Konsistente Datenbank-Backups, Persistenz, Versionen, Quellenfehler, Zeitfenster und unbekannte Angaben geprüft.
@@ -56,3 +56,5 @@ Railway-Deployment `1c665a4b-9d2b-4c8a-9936-69de2ea9de73` erreicht am 16.10.2026
 Die Web-App ist über https://opportunity-os-production-37e2.up.railway.app erreichbar: Healthcheck **200**, anonyme geschützte API **401**, authentifizierte API **200**. Cloud-Browserprüfung auf Desktop und Smartphone erfolgreich: Anmeldung, zehn Marktreihen, Aktienerklärung, offizieller Kontext und deutscher Feed. Auf dem produktiven Volume wurden **1.045 Quellenbelege** gespeichert (626 eindeutige TED-Belege aus 629 gelieferten Treffern plus 419 DE-Belege). Nach dem nächsten erfolgreichen Code-Deployment sind Daten und erfolgreiche Quellzustände erhalten geblieben; beide Vergabequellen melden LIVE-DATEN.
 
 Zusätzliche Regressionen sichern den Wiederanlauf unterbrochener Scans nach Ablauf der Sperr-Lease, datumsgenaue Fristen ohne erfundene Uhrzeit und die Trennung von tatsächlicher KMU-Teilnahme und ausdrücklicher KMU-Eignung. Der fehlende externe Zeitplan wird in der Cloud-Oberfläche sichtbar als ausstehend angezeigt.
+
+Railway-Proxyprüfung: ausschließlich ein bekannter Edge-Hop wird vertraut; zusätzlich eingeschleuste frühere X-Forwarded-For-Einträge werden nicht als Client-IP akzeptiert. Außerhalb Railway bleibt Proxy-Vertrauen standardmäßig deaktiviert. Regressionstest vorhanden.

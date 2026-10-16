@@ -386,3 +386,25 @@ test("Missing eForms time stays date-only and actual SME participation is not tr
     0,
   );
 });
+
+test("Railway trusts exactly one edge-proxy hop; injected earlier XFF entries stay untrusted", async () => {
+  const old = process.env.RAILWAY_ENVIRONMENT_ID;
+  try {
+    process.env.RAILWAY_ENVIRONMENT_ID = "test";
+    const db = new Store(":memory:");
+    const app = createApp(db, new Scanner(db), token);
+    app.get("/proxy-check", (req, res) => res.json({ ip: req.ip }));
+    const r = await request(app)
+      .get("/proxy-check")
+      .set("X-Forwarded-For", "203.0.113.123, 198.51.100.42");
+    assert.equal(r.body.ip, "198.51.100.42");
+    assert.equal(app.get("trust proxy"), 1);
+    delete process.env.RAILWAY_ENVIRONMENT_ID;
+    const local = createApp(db, new Scanner(db), token);
+    assert.equal(local.get("trust proxy"), false);
+    db.close();
+  } finally {
+    if (old === undefined) delete process.env.RAILWAY_ENVIRONMENT_ID;
+    else process.env.RAILWAY_ENVIRONMENT_ID = old;
+  }
+});
