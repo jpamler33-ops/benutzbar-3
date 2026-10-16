@@ -1,0 +1,7 @@
+const base=Bun.env.OPPORTUNITY_URL?.replace(/\/$/,'');
+const token=Bun.env.OPPORTUNITY_ADMIN_TOKEN;
+if(!base||!token)throw new Error('OPPORTUNITY_URL und OPPORTUNITY_ADMIN_TOKEN sind als Repository-Variable/Secret erforderlich');
+const url=new URL(base);if(url.protocol!=='https:')throw new Error('HTTPS erforderlich');
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function run(path,method='GET'){for(let i=0;i<12;i++){let response;try{response=await fetch(base+path,{method,headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},...(method==='POST'?{body:'{}'}:{}),signal:AbortSignal.timeout(180000)});}catch{if(i===11)throw new Error('Dienst nicht erreichbar');await pause(15000);continue;}if([409,429,502,503,504].includes(response.status)&&i<11){await pause(15000);continue;}if(!response.ok)throw new Error(`Scan-Endpunkt meldet HTTP ${response.status}`);const data=await response.json();if(data.errors?.length||data.results?.some(r=>r.ok===false))throw new Error('Mindestens eine Quelle meldet einen Fehler. Geschütztes Quellenprotokoll prüfen.');return data;}throw new Error('Wiederholungen ausgeschöpft');}
+await run('/api/health');const scan=await run('/api/scan','POST');console.log(JSON.stringify({scan:{found:scan.found,inserted:scan.inserted,changed:scan.changed}}));const markets=await run('/api/markets/refresh','POST');console.log(JSON.stringify({markets:markets.results.map(r=>({id:r.id,ok:r.ok,points:r.points}))}));

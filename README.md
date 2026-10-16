@@ -6,7 +6,7 @@ Geschütztes Vergabe- und Markt-Radar für Entrümpelung L&P in Schwarzenfeld/Sc
 
 In der Web-App mit dem privaten Zugriffsschlüssel anmelden. **Überblick** und **Opportunity Feed** zeigen öffentliche Aufträge; **Markt-Radar** zeigt historische Entwicklungen, Berechnung, offizielle Meldungen und automatisch zugeordnete mögliche Erklärungen. Datenquelle, Datenstand und Fehler bleiben sichtbar.
 
-Der Cloud-Zugriffsschlüssel wird separat übergeben und steht weder im Repository noch im Frontend-Build. Persönliche Notizen, gespeicherte Chancen, Status, Suchparameter und Markt-Watchlist bleiben nach Neustart erhalten.
+Der Cloud-Zugriffsschlüssel wird separat übergeben und steht weder im öffentlichen Repository noch im Frontend-Build. Persönliche Notizen, gespeicherte Chancen, Status, Suchparameter und Markt-Watchlist bleiben nach Neustart erhalten.
 
 ## Lokal starten
 
@@ -36,9 +36,11 @@ App: http://localhost:3000. Anmeldung mit dem selbst gesetzten ADMIN_TOKEN. Für
 
 ## Automation und Railway-Free-Plan
 
-Der Server plant Vergabe- und Markt-Scans alle vier Stunden, solange er läuft. Railway Free erzwingt für den Webdienst den Schlafmodus. Deshalb ruft zusätzlich `.github/workflows/scan.yml` die HTTPS-App automatisch alle vier Stunden auf, weckt sie und startet beide geschützten Scans unabhängig von einem geöffneten Browser. Der Workflow ist auch manuell auslösbar.
+Der Server plant Vergabe- und Markt-Scans alle vier Stunden, solange er läuft. Railway Free erzwingt für den Webdienst den Schlafmodus. Ein separater Railway-Cron-Service `opportunity-scan-cron` ist deshalb mit `17 */4 * * *` vorbereitet: Er weckt die HTTPS-App und führt die geschützten Scans aus. Der Schlüssel wird über eine Railway-Variablenreferenz vom Webdienst bezogen.
 
-Dazu sind im GitHub-Repository die Variable `OPPORTUNITY_URL` und das Secret `OPPORTUNITY_ADMIN_TOKEN` erforderlich. Der Workflow wartet bei Anlauf-/Parallelitätsproblemen und meldet Quellfehler als fehlgeschlagenen Lauf. GitHub-Zeitpläne können sich verzögern und benötigen verfügbare Actions-Minuten; die App zeigt tatsächliche letzte Erfolge. Bei deaktivierten Actions ist auf dem Free-Plan kein verlässlicher Dauerbetrieb des lokalen Schedulers gegeben. In einem Always-on-Tarif kann Server-Sleep deaktiviert werden.
+**Der Aktivierungsschritt dieses Cron-Service wurde von Railway mangels Freigabe abgebrochen und ist noch nicht aktiv, solange der aktuelle Abschlussstatus nichts anderes bestätigt.** Der Server-Scheduler allein garantiert bei schlafendem Webdienst keine vierstündigen Scans.
+
+Der zusätzliche GitHub-Workflow `.github/workflows/scan.yml` ist als Alternative enthalten und überspringt den Job, solange `OPPORTUNITY_URL` nicht konfiguriert ist. Seine Einrichtung benötigt die Repository-Variable OPPORTUNITY_URL und das Secret OPPORTUNITY_ADMIN_TOKEN. Die aktuelle GitHub-Verbindung darf keine Secrets/Variablen schreiben; daher wird dieser Workflow nicht als eingerichtet ausgegeben. In einem Always-on-Tarif kann stattdessen Server-Sleep deaktiviert werden.
 
 ## Persistenz und Sicherheit
 
@@ -66,9 +68,9 @@ Tests arbeiten mit isolierten Datenbanken und ausdrücklich bezeichneten Testdat
 
 ## Deployment
 
-Private GitHub-Quelle: `jpamler33-ops/benutzbar-3`. Railway-Service `opportunity-os` im zuvor leeren Projekt `earnest-renewal`, persistentes 500-MB-Volume `/data`. `.railwayignore` und `.gitignore` schließen Zugangsdaten, lokale Datenbanken und Backups aus. Build/Start/Healthcheck sind in `railway.toml` definiert. GitHub-CI prüft Tests, Build und mobile/desktop Chromium-Abläufe.
+GitHub-Quelle (öffentlich): `jpamler33-ops/benutzbar-3`. Railway-Service `opportunity-os` im zuvor leeren Projekt `earnest-renewal`, persistentes 500-MB-Volume `/data`. `.railwayignore` und `.gitignore` schließen Zugangsdaten, lokale Datenbanken und Backups aus. Build/Start/Healthcheck sind in `railway.toml` definiert. GitHub-CI prüft Tests, Build und mobile/desktop Chromium-Abläufe.
 
-Variablen: ADMIN_TOKEN, NODE_ENV=production, DATABASE_PATH=/data/opportunity.sqlite, SCANS_ENABLED=true; Railway stellt PORT und RAILWAY_VOLUME_MOUNT_PATH bereit. Zugangswechsel immer auch im GitHub-Secret OPPORTUNITY_ADMIN_TOKEN nachziehen.
+Variablen: ADMIN_TOKEN, NODE_ENV=production, DATABASE_PATH=/data/opportunity.sqlite, SCANS_ENABLED=true; Railway stellt PORT und RAILWAY_VOLUME_MOUNT_PATH bereit. Der Railway-Cron verwendet eine Referenz auf den Schlüssel des Webdienstes. Bei optionalem GitHub-Zeitplan dessen Secret beim Zugangswechsel ebenfalls aktualisieren.
 
 ## Grenzen
 

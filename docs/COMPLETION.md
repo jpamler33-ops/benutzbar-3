@@ -29,7 +29,7 @@
 Railway-Service `opportunity-os` im vorher vollständig leeren Projekt `earnest-renewal`, 500-MB-Volume `/data`. Das andere bestehende Projekt wurde nicht verändert. Ein neues Projekt war durch das Free-Plan-Ressourcenlimit gesperrt. Der Free-Plan verlangt `sleepApplication=true`; deshalb ist der externe GitHub-Zeitplan erforderlich. Eine Tarifumstellung wurde nicht vorgenommen.
 
 Geplante/konfigurierte Adresse: https://opportunity-os-production-37e2.up.railway.app
-Private GitHub-Quelle: https://github.com/jpamler33-ops/benutzbar-3
+GitHub-Quelle (öffentlich): https://github.com/jpamler33-ops/benutzbar-3
 
 Der verbindliche Deployment- und Actions-Prüfstatus wird nach Abschluss unten ergänzt. Die bloße Domain-Erzeugung ist noch kein erfolgreicher Deploy.
 
@@ -38,3 +38,11 @@ Zugriffsschlüssel separat in der ignorierten Datei `deployment-access.txt`. Kei
 ## Praktische Grenzen
 
 Keine Allwissenheit über sämtliche Produkte und Finanzinstrumente, keine Gewinnzusage. TED und DE können denselben Vorgang unabhängig abbilden; die eindeutige Identität gilt pro Quelle. Der deutsche Import blickt rollierend maximal sieben Tage zurück. Ein wirtschaftlicher Treiber wird nicht aus bloßer zeitlicher Nähe als Tatsache ausgegeben. Kleine regionale Stichproben bleiben als unzureichend gekennzeichnet. Börsenendpunkte, offizielle Veröffentlichungstermine und GitHub-Zeitpläne haben keine zugesicherte sekundengenaue Verfügbarkeit. Verbindliche Vergabeunterlagen bleiben vor einer Bewerbung maßgeblich.
+
+## Infrastruktur-Hinweise während der Bereitstellung
+
+GitHub erlaubt Code-Push und CI, aber keine Repository-Erstellung, Sichtbarkeitsänderung oder Actions-Secret-/Variablenverwaltung. Deshalb wurde das vollständig leere, bereits öffentliche Repository benutzbar-3 verwendet. Es enthält keinen App-Zugriffsschlüssel und keine privaten Datenbankinhalte. Die App selbst bleibt authentifiziert.
+
+Railway-Cron ist mit vollständigem Funktionscode und Variablenreferenz vorbereitet; accept-deploy wurde mit „user did not approve this action“ abgebrochen. Noch keine erfolgreiche Cron-Aktivierung behauptet. Ein optionaler GitHub-Cron bleibt ohne konfigurierte Variable übersprungen.
+
+Der erste Railway-Build scheiterte an einem doppelten `npm ci` über einem Railpack-Cache-Mount (EBUSY). Buildkonfiguration korrigiert: Railpack installiert Abhängigkeiten, der Buildschritt führt nur `npm run build` aus.
