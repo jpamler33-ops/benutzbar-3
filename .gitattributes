@@ -1,0 +1,2 @@
+# Preserve recorded provider responses exactly, including original whitespace.
+tests/fixtures/** -whitespace

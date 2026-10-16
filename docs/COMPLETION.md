@@ -29,7 +29,7 @@
 Railway-Service `opportunity-os` im vorher vollständig leeren Projekt `earnest-renewal`, 500-MB-Volume `/data`. Das andere bestehende Projekt wurde nicht verändert. Ein neues Projekt war durch das Free-Plan-Ressourcenlimit gesperrt. Der Free-Plan verlangt `sleepApplication=true`; deshalb ist der externe GitHub-Zeitplan erforderlich. Eine Tarifumstellung wurde nicht vorgenommen.
 
 Geplante/konfigurierte Adresse: https://opportunity-os-production-37e2.up.railway.app
-Private GitHub-Quelle: https://github.com/jpamler33-ops/opportunity-os
+Private GitHub-Quelle: https://github.com/jpamler33-ops/benutzbar-3
 
 Der verbindliche Deployment- und Actions-Prüfstatus wird nach Abschluss unten ergänzt. Die bloße Domain-Erzeugung ist noch kein erfolgreicher Deploy.
 

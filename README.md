@@ -66,7 +66,7 @@ Tests arbeiten mit isolierten Datenbanken und ausdrücklich bezeichneten Testdat
 
 ## Deployment
 
-Private GitHub-Quelle: `jpamler33-ops/opportunity-os`. Railway-Service `opportunity-os` im zuvor leeren Projekt `earnest-renewal`, persistentes 500-MB-Volume `/data`. `.railwayignore` und `.gitignore` schließen Zugangsdaten, lokale Datenbanken und Backups aus. Build/Start/Healthcheck sind in `railway.toml` definiert. GitHub-CI prüft Tests, Build und mobile/desktop Chromium-Abläufe.
+Private GitHub-Quelle: `jpamler33-ops/benutzbar-3`. Railway-Service `opportunity-os` im zuvor leeren Projekt `earnest-renewal`, persistentes 500-MB-Volume `/data`. `.railwayignore` und `.gitignore` schließen Zugangsdaten, lokale Datenbanken und Backups aus. Build/Start/Healthcheck sind in `railway.toml` definiert. GitHub-CI prüft Tests, Build und mobile/desktop Chromium-Abläufe.
 
 Variablen: ADMIN_TOKEN, NODE_ENV=production, DATABASE_PATH=/data/opportunity.sqlite, SCANS_ENABLED=true; Railway stellt PORT und RAILWAY_VOLUME_MOUNT_PATH bereit. Zugangswechsel immer auch im GitHub-Secret OPPORTUNITY_ADMIN_TOKEN nachziehen.
 
