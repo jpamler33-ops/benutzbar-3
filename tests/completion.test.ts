@@ -287,3 +287,47 @@ test("Stock watchlist persists and authenticated API rejects duplicate or malici
     .expect(400);
   db.close();
 });
+
+test("Berlin publication-date filters include notices published at local midnight", async () => {
+  const { calendarDay, filter, filterSchema } = await import(
+    "../server/api.ts"
+  );
+  assert.equal(calendarDay("2026-10-14T22:00:00.000Z"), "2026-10-15");
+  const db = new Store(":memory:");
+  db.upsert(
+    parseOcds({ ...fixture, publishedDate: "2026-10-15T00:00:00+02:00" })[0],
+  );
+  assert.equal(
+    filter(db.list(), filterSchema.parse({ since: "2026-10-15" })).length,
+    1,
+  );
+  db.close();
+});
+test("Sleeping Railway app never claims browser-independent automation before schedule activation", async () => {
+  const keys = [
+    "RAILWAY_ENVIRONMENT_ID",
+    "SCANS_ENABLED",
+    "EXTERNAL_SCANS_ACTIVE",
+  ] as const;
+  const old = Object.fromEntries(keys.map((k) => [k, process.env[k]]));
+  try {
+    process.env.RAILWAY_ENVIRONMENT_ID = "test";
+    process.env.SCANS_ENABLED = "true";
+    delete process.env.EXTERNAL_SCANS_ACTIVE;
+    const db = new Store(":memory:");
+    const app = createApp(db, new Scanner(db), token);
+    const auth = { Authorization: "Bearer " + token };
+    let r = await request(app).get("/api/overview").set(auth);
+    assert.equal(r.body.scheduler, false);
+    assert.match(r.body.automationNote, /Freigabe|freigabe/);
+    process.env.EXTERNAL_SCANS_ACTIVE = "true";
+    r = await request(app).get("/api/overview").set(auth);
+    assert.equal(r.body.scheduler, true);
+    db.close();
+  } finally {
+    for (const k of keys) {
+      if (old[k] === undefined) delete process.env[k];
+      else process.env[k] = old[k];
+    }
+  }
+});

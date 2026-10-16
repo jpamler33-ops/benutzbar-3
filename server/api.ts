@@ -25,6 +25,16 @@ export const filterSchema = z.object({
   region: z.enum(["all", "target", "unknown"]).default("all"),
   active: z.enum(["true"]).optional(),
 });
+export function calendarDay(iso: string) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Europe/Berlin",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(new Date(iso));
+  const pick = (type: string) => parts.find((p) => p.type === type)!.value;
+  return `${pick("year")}-${pick("month")}-${pick("day")}`;
+}
 export function filter(items: Opportunity[], q: z.infer<typeof filterSchema>) {
   return items.filter(
     (o) =>
@@ -44,7 +54,7 @@ export function filter(items: Opportunity[], q: z.infer<typeof filterSchema>) {
       (!q.source || o.source === q.source) &&
       (!q.category || o.assessment.category === q.category) &&
       (!q.saved || o.saved === (q.saved === "true")) &&
-      (!q.since || (!!o.published && o.published.slice(0, 10) >= q.since)) &&
+      (!q.since || (!!o.published && calendarDay(o.published) >= q.since)) &&
       (!q.distance ||
         (o.assessment.distance !== null &&
           o.assessment.distance <= q.distance)) &&
@@ -162,7 +172,18 @@ export function createApp(
       sources: store.sources(),
       runs,
       settings: store.settings(),
-      scheduler: process.env.SCANS_ENABLED !== "false",
+      scheduler:
+        process.env.EXTERNAL_SCANS_ACTIVE === "true" ||
+        (process.env.SCANS_ENABLED !== "false" &&
+          !process.env.RAILWAY_ENVIRONMENT_ID),
+      automationNote:
+        process.env.EXTERNAL_SCANS_ACTIVE === "true"
+          ? "Alle 4 Stunden · externer Zeitplan"
+          : process.env.SCANS_ENABLED === "false"
+            ? "Server-Scheduler deaktiviert"
+            : process.env.RAILWAY_ENVIRONMENT_ID
+              ? "Schlafmodus · Zeitplanfreigabe ausstehend"
+              : "Alle 4 Stunden · serverseitig",
     });
   });
   app.get("/api/markets", (req, res) => {
@@ -184,11 +205,9 @@ export function createApp(
       try {
         res.json({ results: await marketMonitor.refresh() });
       } catch (e) {
-        res
-          .status(409)
-          .json({
-            error: e instanceof Error ? e.message : "Marktabruf fehlgeschlagen",
-          });
+        res.status(409).json({
+          error: e instanceof Error ? e.message : "Marktabruf fehlgeschlagen",
+        });
       }
     },
   );
@@ -289,11 +308,9 @@ export function createApp(
       try {
         res.json(await scanner.scan());
       } catch (e) {
-        res
-          .status(e instanceof BusyError ? 409 : 502)
-          .json({
-            error: e instanceof Error ? e.message : "Scan fehlgeschlagen",
-          });
+        res.status(e instanceof BusyError ? 409 : 502).json({
+          error: e instanceof Error ? e.message : "Scan fehlgeschlagen",
+        });
       }
     },
   );

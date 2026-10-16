@@ -11,7 +11,7 @@
 
 ## Lokale Prüfungen
 
-- 38 Unit-/Integrations-/API-Tests erfolgreich.
+- 40 Unit-/Integrations-/API-Tests erfolgreich.
 - Acht Browser-Tests erfolgreich (Desktop 1440 px, Smartphone 390 px): bestehende Arbeitsabläufe, Markterklärungen, Belege und Aktien-Watchlist; kein horizontaler Überlauf.
 - Produktionsbuild erfolgreich; Dependency-Audit ohne bekannte Schwachstellen.
 - Konsistente Datenbank-Backups, Persistenz, Versionen, Quellenfehler, Zeitfenster und unbekannte Angaben geprüft.
@@ -46,3 +46,7 @@ GitHub erlaubt Code-Push und CI, aber keine Repository-Erstellung, Sichtbarkeits
 Railway-Cron ist mit vollständigem Funktionscode und Variablenreferenz vorbereitet; accept-deploy wurde mit „user did not approve this action“ abgebrochen. Noch keine erfolgreiche Cron-Aktivierung behauptet. Ein optionaler GitHub-Cron bleibt ohne konfigurierte Variable übersprungen.
 
 Der erste Railway-Build scheiterte an einem doppelten `npm ci` über einem Railpack-Cache-Mount (EBUSY). Buildkonfiguration korrigiert: Railpack installiert Abhängigkeiten, der Buildschritt führt nur `npm run build` aus.
+
+## Beobachteter Deployment-Status
+
+Railway-Deployment `1c665a4b-9d2b-4c8a-9936-69de2ea9de73` erreicht am 16.10.2026 den Status **SUCCESS**. Die GitHub-CI für die ersten beiden Pushes ist erfolgreich. Abschließende HTTPS-/Browserprüfung und korrigierte Anzeige des ausstehenden externen Zeitplans werden separat geprüft.
