@@ -58,3 +58,11 @@ Die Web-App ist über https://opportunity-os-production-37e2.up.railway.app erre
 Zusätzliche Regressionen sichern den Wiederanlauf unterbrochener Scans nach Ablauf der Sperr-Lease, datumsgenaue Fristen ohne erfundene Uhrzeit und die Trennung von tatsächlicher KMU-Teilnahme und ausdrücklicher KMU-Eignung. Der fehlende externe Zeitplan wird in der Cloud-Oberfläche sichtbar als ausstehend angezeigt.
 
 Railway-Proxyprüfung: ausschließlich ein bekannter Edge-Hop wird vertraut; zusätzlich eingeschleuste frühere X-Forwarded-For-Einträge werden nicht als Client-IP akzeptiert. Außerhalb Railway bleibt Proxy-Vertrauen standardmäßig deaktiviert. Regressionstest vorhanden.
+
+## Letzte bestätigte Prüfung · 16.10.2026, 16:13 UTC
+
+- Letztes Anwendungsdeployment `8ae68954-123a-4e6e-8ccf-656fdcc7c4cf`, Commit `9aa84c5`: **SUCCESS**, Railway-Healthcheck bestanden.
+- GitHub-CI `38929858557`: **success**. 43 Backend-/API-Tests und acht Desktop-/Mobil-Browsertests erfolgreich.
+- Erneute HTTPS-/Browserprüfung gegen genau die laufende Cloud-App erfolgreich; 1.045 gespeicherte Belege und beide Vergabequellen LIVE-DATEN nach mehreren Code-Deployments erhalten.
+- Die API ist ohne Schlüssel nicht lesbar (401), angemeldet erreichbar (200). Aktien, Markt-Erklärungen und deutscher Feed auf Desktop und Smartphone geprüft.
+- **Einziger ausstehender Aktivierungsschritt:** Freigabe des vollständig vorbereiteten Railway-Cron-Service. Er ist noch nicht aktiv. Der Webdienst läuft; manuelle Scans sind benutzbar. Die Cloud-Oberfläche behauptet bis zur Freigabe keinen gesicherten externen Vierstundenbetrieb.
