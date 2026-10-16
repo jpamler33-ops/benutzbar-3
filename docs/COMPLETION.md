@@ -7,11 +7,11 @@
 - Datenbasierter Score, regionale Luftlinien, Feed/Details, Status, Notizen, Speicherung, Suche, Filter, CSV, Quellen-/Fehlerprotokolle.
 - Reale historische Coinbase-, EZB-, Eurostat- und Nasdaq-Reihen. Aktien-Watchlist ohne zusätzlichen API-Schlüssel. Eigene Quellenhinweise und Hypothesen.
 - Automatische Erklärungen: transparente Messung, bei TED Beiträge einzelner Auftraggeber, zeitlich eingegrenzte offizielle Meldungen aus EZB/IBM/Ethereum. Wirtschaftliche Wirkung bleibt eine ausdrücklich unbewiesene Hypothese, solange sie nicht kausal belegt ist. Keine erfundenen Ursachen oder Daten.
-- Server-Scheduler sowie externer GitHub-Zeitplan alle vier Stunden zum Wecken des Railway-Free-Dienstes und Ausführen der geschützten Scans. Zugang als GitHub-Secret, niemals im Quellcode.
+- Server-Scheduler und vollständig vorbereiteter Railway-Cron zum browserunabhängigen Vierstundenbetrieb. Dessen Aktivierung wartet auf die angefragte Freigabe. Ein optionaler GitHub-Zeitplan ist enthalten, ohne konfigurierte Variable aber übersprungen. Kein Zugangsschlüssel im Quellcode.
 
 ## Lokale Prüfungen
 
-- 40 Unit-/Integrations-/API-Tests erfolgreich.
+- 42 Unit-/Integrations-/API-Tests erfolgreich.
 - Acht Browser-Tests erfolgreich (Desktop 1440 px, Smartphone 390 px): bestehende Arbeitsabläufe, Markterklärungen, Belege und Aktien-Watchlist; kein horizontaler Überlauf.
 - Produktionsbuild erfolgreich; Dependency-Audit ohne bekannte Schwachstellen.
 - Konsistente Datenbank-Backups, Persistenz, Versionen, Quellenfehler, Zeitfenster und unbekannte Angaben geprüft.
@@ -26,7 +26,7 @@
 
 ## Hosting und GitHub
 
-Railway-Service `opportunity-os` im vorher vollständig leeren Projekt `earnest-renewal`, 500-MB-Volume `/data`. Das andere bestehende Projekt wurde nicht verändert. Ein neues Projekt war durch das Free-Plan-Ressourcenlimit gesperrt. Der Free-Plan verlangt `sleepApplication=true`; deshalb ist der externe GitHub-Zeitplan erforderlich. Eine Tarifumstellung wurde nicht vorgenommen.
+Railway-Service `opportunity-os` im vorher vollständig leeren Projekt `earnest-renewal`, 500-MB-Volume `/data`. Das andere bestehende Projekt wurde nicht verändert. Ein neues Projekt war durch das Free-Plan-Ressourcenlimit gesperrt. Der Free-Plan verlangt `sleepApplication=true`; deshalb ist ein externer Zeitplan erforderlich. Eine Tarifumstellung wurde nicht vorgenommen.
 
 Geplante/konfigurierte Adresse: https://opportunity-os-production-37e2.up.railway.app
 GitHub-Quelle (öffentlich): https://github.com/jpamler33-ops/benutzbar-3
@@ -50,3 +50,9 @@ Der erste Railway-Build scheiterte an einem doppelten `npm ci` über einem Railp
 ## Beobachteter Deployment-Status
 
 Railway-Deployment `1c665a4b-9d2b-4c8a-9936-69de2ea9de73` erreicht am 16.10.2026 den Status **SUCCESS**. Die GitHub-CI für die ersten beiden Pushes ist erfolgreich. Abschließende HTTPS-/Browserprüfung und korrigierte Anzeige des ausstehenden externen Zeitplans werden separat geprüft.
+
+## HTTPS-Verifikation und Datenpersistenz
+
+Die Web-App ist über https://opportunity-os-production-37e2.up.railway.app erreichbar: Healthcheck **200**, anonyme geschützte API **401**, authentifizierte API **200**. Cloud-Browserprüfung auf Desktop und Smartphone erfolgreich: Anmeldung, zehn Marktreihen, Aktienerklärung, offizieller Kontext und deutscher Feed. Auf dem produktiven Volume wurden **1.045 Quellenbelege** gespeichert (626 eindeutige TED-Belege aus 629 gelieferten Treffern plus 419 DE-Belege). Nach dem nächsten erfolgreichen Code-Deployment sind Daten und erfolgreiche Quellzustände erhalten geblieben; beide Vergabequellen melden LIVE-DATEN.
+
+Zusätzliche Regressionen sichern den Wiederanlauf unterbrochener Scans nach Ablauf der Sperr-Lease, datumsgenaue Fristen ohne erfundene Uhrzeit und die Trennung von tatsächlicher KMU-Teilnahme und ausdrücklicher KMU-Eignung. Der fehlende externe Zeitplan wird in der Cloud-Oberfläche sichtbar als ausstehend angezeigt.

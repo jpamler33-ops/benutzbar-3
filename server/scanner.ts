@@ -145,10 +145,14 @@ export class Scanner {
     return this.adapters.some((a) => {
       const run = this.store.db
         .prepare(
-          "SELECT startedAt FROM ScanRuns WHERE source=? ORDER BY id DESC LIMIT 1",
+          "SELECT startedAt,state FROM ScanRuns WHERE source=? ORDER BY id DESC LIMIT 1",
         )
-        .get(a.id) as { startedAt: string } | undefined;
-      return !run || Date.now() - Date.parse(run.startedAt) >= 4 * 3600000;
+        .get(a.id) as { startedAt: string; state: string } | undefined;
+      return (
+        !run ||
+        run.state === "RUNNING" ||
+        Date.now() - Date.parse(run.startedAt) >= 4 * 3600000
+      );
     });
   }
   start() {

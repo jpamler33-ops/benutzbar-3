@@ -331,3 +331,58 @@ test("Sleeping Railway app never claims browser-independent automation before sc
     }
   }
 });
+
+test("Interrupted scans are due after restart and recover once the database lease is free", async () => {
+  const db = new Store(":memory:");
+  const scanner = new Scanner(db, {
+    id: "ted",
+    async *search() {
+      yield [];
+    },
+  });
+  await scanner.scan();
+  assert.equal(scanner.due(), false);
+  db.db
+    .prepare(
+      "INSERT INTO ScanRuns(source,startedAt,state,query) VALUES('ted',?,'RUNNING','interrupted')",
+    )
+    .run(new Date().toISOString());
+  assert.equal(scanner.due(), true);
+  db.acquire("old-owner");
+  await assert.rejects(scanner.scan(), /bereits/);
+  db.release("old-owner");
+  await scanner.scan();
+  assert.equal(scanner.due(), false);
+  assert.ok(
+    db
+      .runs()
+      .some(
+        (r) =>
+          (r as { state: string; error: string }).state === "FEHLER" &&
+          (r as { error: string }).error.includes("unterbrochen"),
+      ),
+  );
+  db.close();
+});
+
+test("Missing eForms time stays date-only and actual SME participation is not treated as suitability", () => {
+  const xml =
+    "<ContractNotice><TenderSubmissionDeadlinePeriod><EndDate>2026-11-18+01:00</EndDate></TenderSubmissionDeadlinePeriod><SMEParticipationIndicator>true</SMEParticipationIndicator></ContractNotice>";
+  const v = parseEforms(xml);
+  assert.equal(v.deadlinePrecision, "date");
+  assert.equal(v.sme, null);
+  assert.equal(v.deadlines[0], "2026-11-18T00:00:00.000Z");
+  const exact = parseEforms(
+    readFileSync(
+      new URL("./fixtures/german-eforms-live.xml", import.meta.url),
+      "utf8",
+    ),
+  );
+  assert.equal(exact.deadlinePrecision, "datetime");
+  assert.equal(
+    parseEforms(
+      "<ContractNotice><TenderSubmissionDeadlinePeriod><EndDate>2026-02-30</EndDate></TenderSubmissionDeadlinePeriod></ContractNotice>",
+    ).deadlines.length,
+    0,
+  );
+});

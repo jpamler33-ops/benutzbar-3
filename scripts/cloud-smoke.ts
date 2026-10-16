@@ -1,3 +1,6 @@
+import { EnvHttpProxyAgent, setGlobalDispatcher } from "undici";
+if (process.env.HTTPS_PROXY || process.env.HTTP_PROXY)
+  setGlobalDispatcher(new EnvHttpProxyAgent());
 import { chromium, expect } from "@playwright/test";
 const base =
   process.env.OPPORTUNITY_URL ??
@@ -35,7 +38,13 @@ console.log(
     2,
   ),
 );
-const browser = await chromium.launch();
+const browser = await chromium.launch({
+  ...(process.env.HTTPS_PROXY || process.env.HTTP_PROXY
+    ? {
+        proxy: { server: (process.env.HTTPS_PROXY ?? process.env.HTTP_PROXY)! },
+      }
+    : {}),
+});
 try {
   for (const [name, width, height] of [
     ["desktop", 1440, 1000],

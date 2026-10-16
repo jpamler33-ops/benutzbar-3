@@ -291,6 +291,7 @@ export class GermanAdapter implements SourceAdapter {
           ? {
               ...n,
               deadlines: extra.deadlines.length ? extra.deadlines : n.deadlines,
+              deadlinePrecision: extra.deadlinePrecision,
               requirements: extra.requirements ?? n.requirements,
               sme: extra.sme,
               raw: {
@@ -316,6 +317,7 @@ export class GermanAdapter implements SourceAdapter {
 
 interface Supplement {
   deadlines: string[];
+  deadlinePrecision: "date" | "datetime" | "mixed";
   requirements: string | null;
   sme: boolean | null;
   sha256: string;
@@ -332,6 +334,7 @@ export function parseEforms(xml: string): Supplement {
   const deadlines: string[] = [],
     requirements: string[] = [];
   const sme: boolean[] = [];
+  const precision: boolean[] = [];
   const collect = (v: unknown): string[] =>
     typeof v === "string"
       ? [v]
@@ -361,20 +364,22 @@ export function parseEforms(xml: string): Supplement {
           const time = String(p?.EndTime ?? "").match(
             /^(\d{2}:\d{2}:\d{2})([+-]\d{2}:\d{2}|Z)?$/,
           );
-          if (date) {
+          if (date && z.iso.date().safeParse(date[1]).success) {
             const iso =
               time && (time[2] || date[2])
                 ? `${date[1]}T${time[1]}${time[2] ?? date[2]}`
                 : `${date[1]}T00:00:00Z`;
-            if (Number.isFinite(Date.parse(iso)))
+            if (Number.isFinite(Date.parse(iso))) {
               deadlines.push(new Date(iso).toISOString());
+              precision.push(!!(time && (time[2] || date[2])));
+            }
           }
         }
       }
       if (/TendererQualificationRequest|SelectionCriteria/.test(key))
         requirements.push(...collect(child));
       if (
-        /SMESuitableIndicator|SMEParticipationIndicator/.test(key) &&
+        /^SMESuitableIndicator$/.test(key) &&
         ["true", "false"].includes(String(child))
       )
         sme.push(String(child) === "true");
@@ -384,6 +389,12 @@ export function parseEforms(xml: string): Supplement {
   walk(root);
   return {
     deadlines: [...new Set(deadlines)].sort(),
+    deadlinePrecision:
+      precision.length && precision.every(Boolean)
+        ? "datetime"
+        : precision.some(Boolean)
+          ? "mixed"
+          : "date",
     requirements:
       [...new Set(requirements)].join("\n\n").slice(0, 120000) || null,
     sme: sme.length ? sme.some(Boolean) : null,
